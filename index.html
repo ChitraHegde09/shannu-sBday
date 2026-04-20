@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Happy Birthday, My Love 🎂</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Floating Hearts BG -->
   <div class="hearts-bg" id="heartsBg"></div>
-
-  <!-- Stars -->
   <div class="stars" id="stars"></div>
 
-  <!-- Main Card -->
   <main class="card" id="mainCard">
 
     <!-- Page 1: Intro -->
@@ -48,7 +44,7 @@
       <h1 class="title">Happy Birthday</h1>
       <h2 class="subtitle">my darling 🫶</h2>
       <p class="message">
-        Today the universe decided to gift me the most wonderful person — <em>you</em>. 
+        Today the universe decided to gift me the most wonderful person — <em>you</em>.
         Every day with you feels like a celebration!
       </p>
       <button class="btn" onclick="goTo('page3')">Read your letter 💖</button>
@@ -60,12 +56,12 @@
         <p class="letter-date" id="letterDate"></p>
         <p class="letter-salutation">My dearest,</p>
         <p class="letter-body">
-          On this beautiful day, I just want you to know that you light up my world in ways 
-          I never imagined possible. Your laugh, your kindness, your silly jokes at 3am — 
+          On this beautiful day, I just want you to know that you light up my world in ways
+          I never imagined possible. Your laugh, your kindness, your silly jokes at 3am —
           every little thing about you makes my heart skip. 💓
         </p>
         <p class="letter-body">
-          I feel so incredibly lucky to have you in my life. Here's to celebrating <em>you</em> 
+          I feel so incredibly lucky to have you in my life. Here's to celebrating <em>you</em>
           today, tomorrow, and every single day after that.
         </p>
         <p class="letter-sign">With all my love,<br/><span class="letter-xo">xoxo 🌸</span></p>
@@ -73,35 +69,47 @@
       <button class="btn" onclick="goTo('page4')">One more surprise ✨</button>
     </section>
 
-    <!-- Page 4: Wishes Gallery -->
+    <!-- Page 4: Personal Video/Memory Gallery -->
     <section class="page" id="page4">
-      <h2 class="section-title">My wishes for you 🌟</h2>
-      <div class="wishes-grid">
-        <div class="wish-card" style="--c:#ffb7c5">
-          <span class="wish-icon">🌷</span>
-          <p>A life full of joy & laughter</p>
+      <h2 class="section-title">Our memories 🎬</h2>
+      <p class="section-sub">Some moments that mean everything 💕</p>
+
+      <div class="memory-gallery">
+
+        <!-- ============================================================
+             ADD YOUR VIDEOS/PHOTOS HERE
+             For a video: replace "YOUR_VIDEO_PATH.mp4" with your file path
+             For a photo: replace "YOUR_PHOTO_PATH.jpg" with your file path
+             You can add or remove .memory-item blocks as needed
+             ============================================================ -->
+
+        <div class="memory-item">
+          <video class="memory-media" controls playsinline loop>
+            <source src="YOUR_VIDEO_PATH_1.mp4" type="video/mp4">
+            <!-- Fallback if video not found -->
+            <div class="media-placeholder">🎥 Add your video path here</div>
+          </video>
+          <p class="memory-caption">Your caption here 💕</p>
         </div>
-        <div class="wish-card" style="--c:#ffd6a5">
-          <span class="wish-icon">☀️</span>
-          <p>Sunshine on every cloudy day</p>
+
+        <div class="memory-item">
+          <video class="memory-media" controls playsinline loop>
+            <source src="YOUR_VIDEO_PATH_2.mp4" type="video/mp4">
+            <div class="media-placeholder">🎥 Add your video path here</div>
+          </video>
+          <p class="memory-caption">Your caption here 🌸</p>
         </div>
-        <div class="wish-card" style="--c:#caffbf">
-          <span class="wish-icon">🌿</span>
-          <p>Peace, health & good vibes</p>
+
+        <div class="memory-item">
+          <img class="memory-media" src="YOUR_PHOTO_PATH_1.jpg" alt="Our memory" onerror="this.parentElement.querySelector('.media-placeholder').style.display='flex'; this.style.display='none'"/>
+          <div class="media-placeholder" style="display:none">📷 Add your photo path here</div>
+          <p class="memory-caption">Your caption here ✨</p>
         </div>
-        <div class="wish-card" style="--c:#a0c4ff">
-          <span class="wish-icon">🌊</span>
-          <p>Adventures beyond your dreams</p>
-        </div>
-        <div class="wish-card" style="--c:#bdb2ff">
-          <span class="wish-icon">⭐</span>
-          <p>Every dream coming true</p>
-        </div>
-        <div class="wish-card" style="--c:#ffc6ff">
-          <span class="wish-icon">💝</span>
-          <p>All the love you deserve</p>
-        </div>
+
+        <!-- Add more memory-items as needed -->
+
       </div>
+
       <button class="btn" onclick="goTo('page5')">Last page 🎀</button>
     </section>
 
@@ -111,11 +119,11 @@
       <h1 class="final-title">You are loved</h1>
       <p class="final-sub">More than words can ever say. 💗</p>
       <div class="balloon-row">
-        <div class="balloon" style="--bc:#ff8fab;--delay:0s">🎈</div>
-        <div class="balloon" style="--bc:#ffd6a5;--delay:.3s">🎈</div>
-        <div class="balloon" style="--bc:#a0c4ff;--delay:.6s">🎈</div>
-        <div class="balloon" style="--bc:#bdb2ff;--delay:.9s">🎈</div>
-        <div class="balloon" style="--bc:#caffbf;--delay:1.2s">🎈</div>
+        <div class="balloon" style="--delay:0s">🎈</div>
+        <div class="balloon" style="--delay:.3s">🎈</div>
+        <div class="balloon" style="--delay:.6s">🎈</div>
+        <div class="balloon" style="--delay:.9s">🎈</div>
+        <div class="balloon" style="--delay:1.2s">🎈</div>
       </div>
       <p class="restart-hint" onclick="restart()">↺ Replay from the start</p>
     </section>
