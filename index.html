@@ -1,135 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>Happy Birthday, My Love 🎂</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Happy Birthday 🎂</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts-bg" id="heartsBg"></div>
+    <div class="stars" id="stars"></div>
 
-  <div class="hearts-bg" id="heartsBg"></div>
-  <div class="stars" id="stars"></div>
-
-  <main class="card" id="mainCard">
-
-    <!-- Page 1: Intro -->
-    <section class="page active" id="page1">
-      <div class="envelope" id="envelope" onclick="openEnvelope()">
-        <div class="envelope-flap"></div>
-        <div class="envelope-body">
-          <span class="envelope-icon">💌</span>
-          <p class="envelope-hint">tap to open</p>
-        </div>
-      </div>
-      <p class="tagline">A little something for you...</p>
-    </section>
-
-    <!-- Page 2: Big Birthday Message -->
-    <section class="page" id="page2">
-      <div class="confetti-burst" id="confettiBurst"></div>
-      <div class="cake-wrapper">
-        <div class="cake">
-          <div class="candles">
-            <div class="candle"><div class="flame"></div></div>
-            <div class="candle"><div class="flame"></div></div>
-            <div class="candle"><div class="flame"></div></div>
+    <main class="card" id="mainCard">
+      <!-- Page 1: Intro -->
+      <section class="page active" id="page1">
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <span class="envelope-icon">💌</span>
+            <p class="envelope-hint">tap to open</p>
           </div>
-          <div class="cake-top"></div>
-          <div class="cake-mid"></div>
-          <div class="cake-base"></div>
         </div>
-      </div>
-      <h1 class="title">Happy Birthday</h1>
-      <h2 class="subtitle">my darling 🫶</h2>
-      <p class="message">
-        Today the universe decided to gift me the most wonderful person — <em>you</em>.
-        Every day with you feels like a celebration!
-      </p>
-      <button class="btn" onclick="goTo('page3')">Read your letter 💖</button>
-    </section>
+        <p class="tagline">A little something for you...</p>
+      </section>
 
-    <!-- Page 3: Love Letter -->
-    <section class="page" id="page3">
-      <div class="letter-paper">
-        <p class="letter-date" id="letterDate"></p>
-        <p class="letter-salutation">My dearest,</p>
-        <p class="letter-body">
-          On this beautiful day, I just want you to know that you light up my world in ways
-          I never imagined possible. Your laugh, your kindness, your silly jokes at 3am —
-          every little thing about you makes my heart skip. 💓
+      <!-- Page 2: Big Birthday Message -->
+      <section class="page" id="page2">
+        <div class="confetti-burst" id="confettiBurst"></div>
+        <div class="cake-wrapper">
+          <div class="cake">
+            <div class="candles">
+              <div class="candle"><div class="flame"></div></div>
+              <div class="candle"><div class="flame"></div></div>
+              <div class="candle"><div class="flame"></div></div>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-mid"></div>
+            <div class="cake-base"></div>
+          </div>
+        </div>
+        <h1 class="title">Happy Birthday</h1>
+        <h2 class="subtitle">Shannuuuuu 🫶</h2>
+        <p class="message">
+          Today is yours gundu, and you are mine always — <em>I love you</em>.
+          Every day with you feels like a new beginning!
         </p>
-        <p class="letter-body">
-          I feel so incredibly lucky to have you in my life. Here's to celebrating <em>you</em>
-          today, tomorrow, and every single day after that.
-        </p>
-        <p class="letter-sign">With all my love,<br/><span class="letter-xo">xoxo 🌸</span></p>
-      </div>
-      <button class="btn" onclick="goTo('page4')">One more surprise ✨</button>
-    </section>
+        <button class="btn" onclick="goTo('page3')">Read your letter 💖</button>
+      </section>
 
-    <!-- Page 4: Personal Video/Memory Gallery -->
-    <section class="page" id="page4">
-      <h2 class="section-title">Our memories 🎬</h2>
-      <p class="section-sub">Some moments that mean everything 💕</p>
+      <!-- Page 3: Love Letter -->
+      <section class="page" id="page3">
+        <div class="letter-paper">
+          <p class="letter-date" id="letterDate"></p>
+          <p class="letter-salutation">Cutie Shannu,</p>
+          <p class="letter-body">
+            I have waited so long for this day 😭 now it feels like agotu.. but
+            koi naa u are here always 😗 Everyday is happy if it's with you, if
+            it's for you.. I am lucky to have you Shannu 🫂 Happy Birthday Jaan
+            💋
+          </p>
+          <p class="letter-body">
+            I just love you every moment, I will be with you always 🎀
+          </p>
+          <p class="letter-sign">
+            Dil se, pyar se,<br /><span class="letter-xo">Hembdti</span>
+          </p>
+        </div>
+        <button class="btn" onclick="goTo('page4')">
+          One more ✨
+        </button>
+      </section>
 
-      <div class="memory-gallery">
+      <!-- Page 4: Personal Video/Memory Gallery -->
+      <section class="page" id="page4">
+        <h2 class="section-title">Show time 🎬</h2>
+        <p class="section-sub">Bandi achchi h tumhari be proud</p>
 
-        <!-- ============================================================
+        <div class="memory-gallery">
+          <!-- ============================================================
              ADD YOUR VIDEOS/PHOTOS HERE
              For a video: replace "YOUR_VIDEO_PATH.mp4" with your file path
              For a photo: replace "YOUR_PHOTO_PATH.jpg" with your file path
              You can add or remove .memory-item blocks as needed
              ============================================================ -->
 
-        <div class="memory-item">
-          <video class="memory-media" controls playsinline loop>
-            <source src="YOUR_VIDEO_PATH_1.mp4" type="video/mp4">
-            <!-- Fallback if video not found -->
-            <div class="media-placeholder">🎥 Add your video path here</div>
-          </video>
-          <p class="memory-caption">Your caption here 💕</p>
+          <div class="memory-item">
+            <video
+              class="memory-media"
+              controls
+              playsinline
+              loop
+              preload="metadata"
+            >
+              <source
+                src="WhatsApp Video 2026-04-28 at 7.15.48 PM.mp4"
+                type="video/mp4"
+              />
+              Video could not be loaded.
+            </video>
+            <p class="memory-caption">Hehe 💕</p>
+          </div>
+
+          <div class="memory-item">
+            <video
+              class="memory-media"
+              controls
+              playsinline
+              loop
+              preload="metadata"
+            >
+              <source
+                src="WhatsApp Video 2026-04-28 at 7.18.14 PM.mp4"
+                type="video/mp4"
+              />
+              Video could not be loaded.
+            </video>
+            <p class="memory-caption">Lobb uuuu 🌸</p>
+          </div>
+          <div class="memory-item">
+            <video
+              class="memory-media"
+              controls
+              playsinline
+              loop
+              preload="metadata"
+            >
+              <source
+                src="WhatsApp Video 2026-04-28 at 7.18.55 PM.mp4"
+                type="video/mp4"
+              />
+              Video could not be loaded.
+            </video>
+            <p class="memory-caption">Ide agittu snap ✨</p>
+          </div>
         </div>
 
-        <div class="memory-item">
-          <video class="memory-media" controls playsinline loop>
-            <source src="YOUR_VIDEO_PATH_2.mp4" type="video/mp4">
-            <div class="media-placeholder">🎥 Add your video path here</div>
-          </video>
-          <p class="memory-caption">Your caption here 🌸</p>
+        <button class="btn" onclick="goTo('page5')">Ok boiii🎀</button>
+      </section>
+
+      <!-- Page 5: Final -->
+      <section class="page" id="page5">
+        <div class="final-anim" id="finalAnim"></div>
+        <h1 class="final-title">You are loved</h1>
+        <p class="final-sub">More than words can ever say. 💗</p>
+        <div class="balloon-row">
+          <div class="balloon" style="--delay: 0s">🎈</div>
+          <div class="balloon" style="--delay: 0.3s">🎈</div>
+          <div class="balloon" style="--delay: 0.6s">🎈</div>
+          <div class="balloon" style="--delay: 0.9s">🎈</div>
         </div>
+        <p class="restart-hint" onclick="restart()">↺ Phir se dekhna h?</p>
+      </section>
+    </main>
 
-        <div class="memory-item">
-          <img class="memory-media" src="YOUR_PHOTO_PATH_1.jpg" alt="Our memory" onerror="this.parentElement.querySelector('.media-placeholder').style.display='flex'; this.style.display='none'"/>
-          <div class="media-placeholder" style="display:none">📷 Add your photo path here</div>
-          <p class="memory-caption">Your caption here ✨</p>
-        </div>
-
-        <!-- Add more memory-items as needed -->
-
-      </div>
-
-      <button class="btn" onclick="goTo('page5')">Last page 🎀</button>
-    </section>
-
-    <!-- Page 5: Final -->
-    <section class="page" id="page5">
-      <div class="final-anim" id="finalAnim"></div>
-      <h1 class="final-title">You are loved</h1>
-      <p class="final-sub">More than words can ever say. 💗</p>
-      <div class="balloon-row">
-        <div class="balloon" style="--delay:0s">🎈</div>
-        <div class="balloon" style="--delay:.3s">🎈</div>
-        <div class="balloon" style="--delay:.6s">🎈</div>
-        <div class="balloon" style="--delay:.9s">🎈</div>
-        <div class="balloon" style="--delay:1.2s">🎈</div>
-      </div>
-      <p class="restart-hint" onclick="restart()">↺ Replay from the start</p>
-    </section>
-
-  </main>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
